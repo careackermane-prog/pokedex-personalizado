@@ -1,12 +1,11 @@
 import { defineConfig } from 'vite'
-import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 
-// https://vite.dev/config/
 export default defineConfig({
-  base: process.env.DEPLOY_BASE_URL ?? '/' ,
+  base: '/pokedex-personalizado/',
   plugins: [
     react(),
-    tailwindcss()
+    tailwindcss(),
   ],
 })
